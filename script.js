@@ -1,5 +1,9 @@
 const links = [
-   
+    "https://shrinkme.ink/DSDzD",
+    "https://shrinkme.ink/rvwOCvs",
+    "https://shrinkme.ink/L9FfRb5",
+    "https://shrinkme.ink/FHc6Wg3t",
+    "https://shrinkme.ink/erfrQ"
 ];
 
 // Function to open a random link
@@ -21,11 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // List of valid keys
 const validKeys = [
-  
+    "VQ1WC2YTEJX59IYC",
+    "FPSYY618FLZ16JPG",
+    "M7IPLE5XZXEDL2JP",
+    "CRUCQZG3U20DDJC0",
+    "J6JZS4FPUWSU9T3D"
 ];
 
 // Link to open if the key is valid
-const successLink = "";
+const successLink = "https://discord.gg/d8dP47UE";
 
 // Function to validate input key
 function validateKey() {
@@ -46,4 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
         submitButton.addEventListener("click", validateKey);
     }
 });
-
