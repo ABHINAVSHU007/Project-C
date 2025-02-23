@@ -1,0 +1,178 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #1e1e2f; /* Dark theme */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+#container h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff4757; /* Red accent */
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin: 5px 0;
+    }
+}
+
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main section styling (stacked layout) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+/* Info section styling */
+.info-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+.info-section p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-section ol {
+    text-align: left;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.info-section li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.info-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 47 px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.info-section, fieldset {
+    width: 100vh; /* Increase this value as needed */
+}
+
+/* Legend styling */
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Button styling */
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
