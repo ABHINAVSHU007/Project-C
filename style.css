@@ -3,15 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Header styling */
 header {
-    background-color: #1e1e2f; /* Dark theme */
+    background-color: #1e1e2f;
     color: white;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 /* Container */
@@ -51,35 +52,25 @@ nav ul li a {
 
 /* Hover effect */
 nav ul li a:hover {
-    background-color: #ff4757; /* Red accent */
-    color: white;
+    background-color: #ff4757;
 }
 
-/* Responsive design */
+/* Responsive Navigation */
 @media (max-width: 768px) {
     #container {
         flex-direction: column;
         text-align: center;
     }
     nav ul {
+        flex-direction: column;
         margin-top: 10px;
     }
     nav ul li {
-        margin-left: 0;
         margin: 5px 0;
     }
 }
 
-
-/* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Main section styling (stacked layout) */
+/* Main section styling */
 main {
     display: flex;
     flex-direction: column;
@@ -87,6 +78,7 @@ main {
     gap: 20px;
     padding: 40px 20px;
     background-color: #f8f9fa;
+    width: 100%;
 }
 
 /* Info section styling */
@@ -96,12 +88,12 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 320px;
+    max-width: 400px;
+    width: 90%;
 }
 
 .info-section p {
     font-size: 18px;
-    text-align: center;
     font-weight: bold;
     color: #333;
 }
@@ -109,8 +101,6 @@ main {
 .info-section ol {
     text-align: left;
     margin-top: 10px;
-    text-align: center;
-
 }
 
 .info-section li {
@@ -132,15 +122,12 @@ main {
 fieldset {
     border: 2px solid #007bff;
     padding: 20px;
-    border-radius: 47 px;
+    border-radius: 10px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    max-width: 400px;
+    width: 90%;
     text-align: center;
-}
-
-.info-section, fieldset {
-    width: 100vh; /* Increase this value as needed */
 }
 
 /* Legend styling */
@@ -171,8 +158,26 @@ input {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    width: 100%;
 }
 
 .primary-btn:hover {
     background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+    #container h1 {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    main {
+        padding: 20px;
+    }
 }
